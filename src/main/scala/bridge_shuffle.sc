@@ -1,27 +1,23 @@
 // Slothbytes Bridge Shuffle
 // Week 12 Year 2025
+import scala.collection.mutable.ArrayBuffer
 
-var x = 0
-var array1 = Array("A", "A", "A")
-var array2 = Array("B", "B", "B")
-var array3 = Array()
+val array1 = Array("A", "A", "A")
+val array2 = Array("B", "B", "B")
 
-def shuffle =
-  while True do
-    if array1.length >= x && array2.length >= x + 1 then
-      array3(x) = array1 (x)
-      array3(x+1) = array2 (x+1)
+def bridgeShuffle(arr1: Seq[Any], arr2: Seq[Any]): Unit = 
+  val arr3 = ArrayBuffer[Any]()
 
-    if array1.length < x && array2.length >= x then
-      array3(x) = array2(x)
-      array3(x+1) = array2(x+1)
-
-    if array1.length >= x && array2.length < x then
-      array3(x) = array1(x)
-      array3(x+1) = array1(x+1)
-
-    if array1.length < x && array2.length < x + 1 then
-      print("finish")
-      break
-
-    i += 2
+  var x = 0
+  var do_run = true
+  
+  while (x < arr1.length || x < arr2.length) do
+    if (x < arr1.length) then
+      arr3.append(arr1(x))
+    if (x < arr2.length) then
+      arr3.append(arr2(x))
+    x += 1
+  
+  println(arr3.mkString(", "))
+  
+bridgeShuffle(array1, array2)
