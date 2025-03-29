@@ -5,5 +5,5 @@ ThisBuild / scalaVersion := "3.3.5"
 lazy val root = (project in file("."))
   .settings(
     name := "sloth_bytes_scala",
-    idePackagePrefix := Some("de.shadowdara")
+    idePackagePrefix := Some("de.shadowdara.sloth_bytes_scala")
   )

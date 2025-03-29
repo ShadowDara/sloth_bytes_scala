@@ -1,5 +1,8 @@
 // Slothbytes Bridge Shuffle
 // Week 12 Year 2025
+
+package de.shadowdara.sloth_bytes_scala
+
 import scala.collection.mutable.ArrayBuffer
 
 val array1 = Array("A", "A", "A")
