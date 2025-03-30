@@ -1,14 +1,15 @@
 // Slothbytes Bridge Shuffle
 // Week 12 Year 2025
+// made by Shadowdara
 
 package de.shadowdara.sloth_bytes_scala
 
 import scala.collection.mutable.ArrayBuffer
 
-val array1 = Array("A", "A", "A")
-val array2 = Array("B", "B", "B")
+val w12_array1 = Array("A", "A", "A")
+val w12_array2 = Array("B", "B", "B")
 
-def bridgeShuffle(arr1: Seq[Any], arr2: Seq[Any]): Unit = 
+def main(arr1: Seq[Any], arr2: Seq[Any]): Unit = 
   val arr3 = ArrayBuffer[Any]()
 
   var x = 0
@@ -22,5 +23,3 @@ def bridgeShuffle(arr1: Seq[Any], arr2: Seq[Any]): Unit =
     x += 1
   
   println(arr3.mkString(", "))
-  
-bridgeShuffle(array1, array2)
