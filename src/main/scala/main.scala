@@ -34,7 +34,7 @@ def main(): Unit = {
     print("Credits\nMade by Shadowdara\nhttps://github.com/shadowdara")
 
   else if input == "2" then
-    println(lemonade_stand.test())
+    println("Test")
 
   else if input == "12" then
     println(bridge_shuffle.make_shuffle(w12_array1, w12_array2).mkString(", "))
