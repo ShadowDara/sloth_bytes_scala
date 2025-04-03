@@ -4,7 +4,11 @@ This is my weekly contribution Repository to the Slothbytes Coding Challenge in 
 
 Feel free to copy some code, if you want too, but would be very cool if you give credits!
 
-Shadowdara :D
+**Shadowdara :D**
+
+---
+
+to run and test, execute the `main.scala` file!
 
 ---
 

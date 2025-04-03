@@ -12,6 +12,7 @@ object lemonade_stand {
     var bill5 = 0
     var bill10 = 0
     var bill20 = 0
+
     for x <- arr.indices do
       if arr(x) == 5 then
         bill5 += 1
@@ -28,8 +29,10 @@ object lemonade_stand {
         if bill10 >= 1 && bill5 >= 1 then
           bill10 -= 1
           bill5 -= 1
+
         else if bill5 >= 3 then
           bill5 -= 3
+
         else break(false)
     true
   }

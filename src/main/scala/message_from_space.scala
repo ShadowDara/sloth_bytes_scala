@@ -12,6 +12,7 @@ object message_from_space {
     val stack = Stack[String]()
     val current = new StringBuilder()
     var num = 0
+
     for (c <- s)
       if (c.isDigit)
         num = num * 10 + (c - '0')
