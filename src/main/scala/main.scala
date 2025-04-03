@@ -5,8 +5,17 @@
 package de.shadowdara.sloth_bytes_scala
 
 import scala.io.StdIn
+import scala.util.boundary
+import scala.util.boundary.break
 
-val greeting: String = "Hello, Scala!"
+val start = """Select: 
+  0 to break
+  1 to see Credits
+  2 for testing
+  12 for the bridge_shuffle
+  13 for the lemonade stand
+  14 for the space message
+"""
 
 // week 12
 val w12_array1 = Array("A", "A", "A")
@@ -16,19 +25,18 @@ val w12_array2 = Array("B", "B", "B")
 val lemonade1 = Array(5, 5, 5, 10, 20)
 val lemonade2 = Array(5, 5, 10, 10, 20)
 
+// week 14
+val spacemessage1 = "ABCD"
+val spacemessage2 = "AB[3CD]"
+val spacemessage3 = "IF[2E]LG[5O]D"
+
 @main
 def main(): Unit = {
-  print("""Select: 
-  0 to break
-  1 to see Credits
-  2 for testing
-  12 for the bridge_shuffle
-  13 for the lemonade stand
-""")
-
+  print(start)
   val input = StdIn.readLine("\nYour Choice: ")
   if input == "0" then
     print("break")
+    return
 
   else if input == "1" then
     print("Credits\nMade by Shadowdara\nhttps://github.com/shadowdara")
@@ -43,8 +51,15 @@ def main(): Unit = {
     println(lemonade_stand.check_bill(lemonade1))
     println(lemonade_stand.check_bill(lemonade2))
 
+  else if input == "14" then
+    println(message_from_space.spaceMessage(spacemessage1))
+    println(message_from_space.spaceMessage(spacemessage2))
+    println(message_from_space.spaceMessage(spacemessage3))
+
   //else if input == "0" then
   //else if input == "0" then
   //else if input == "0" then
   //else if input == "0" then
+
+  print("Exiting!")
 }
