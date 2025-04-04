@@ -77,12 +77,12 @@ def run_base(input: String): Unit = {
 
 // to run the challenge from every week!
 def run_all(): Unit = {
-  print("All results:")
-  print("### Week 12")
+  println("All results:")
+  println("### Week 12")
   run_base("12")
-  print("### Week 13")
+  println("### Week 13")
   run_base("13")
-  print("### Week 14")
+  println("### Week 14")
   run_base("14")
 }
 
