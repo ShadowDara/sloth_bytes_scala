@@ -33,9 +33,6 @@ global.sbt
 *.ipr
 out/
 
-# VS Code
-.vscode/settings.json
-
 # Betriebssystem-Dateien
 .DS_Store
 Thumbs.db

@@ -30,5 +30,6 @@ object message_from_space {
 
       else
         current.append(c)
+
     current.toString()
 }

@@ -33,7 +33,9 @@ object lemonade_stand {
         else if bill5 >= 3 then
           bill5 -= 3
 
-        else break(false)
+        else
+          break(false)
+
     true
   }
 }

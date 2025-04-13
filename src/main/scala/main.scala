@@ -14,7 +14,8 @@ val info = """Select:
   2 to run all
   12 for the bridge_shuffle
   13 for the lemonade stand
-  14 for the space message"""
+  14 for the space message
+  15 for the sticky keys typing"""
 
 
 // ## vars for the weekly challenges
@@ -30,6 +31,18 @@ val lemonade2 = Array(5, 5, 10, 10, 20)
 val spacemessage1 = "ABCD"
 val spacemessage2 = "AB[3CD]"
 val spacemessage3 = "IF[2E]LG[5O]D"
+
+// week 15
+val shortpressed1 = "alex"
+val longpressed1 = "aaleex"
+val shortpressed2 = "saeed"
+val longpressed2 = "ssaaedd"
+val shortpressed3 = "leelee"
+val longpressed3 = "lleeelee"
+val shortpressed4 = "Tokyo"
+val longpressed4 = "TTokkyoh"
+val shortpressed5 = "laiden"
+val longpressed5 = "laiden"
 
 
 // to break to function
@@ -68,9 +81,14 @@ def run_base(input: String): Unit = {
     println(message_from_space.spaceMessage(spacemessage1))
     println(message_from_space.spaceMessage(spacemessage2))
     println(message_from_space.spaceMessage(spacemessage3))
+  
+  else if input == "15" then
+    println(StickyKeysTyping.isLongPressed(shortpressed1, longpressed1))
+    println(StickyKeysTyping.isLongPressed(shortpressed2, longpressed2))
+    println(StickyKeysTyping.isLongPressed(shortpressed3, longpressed3))
+    println(StickyKeysTyping.isLongPressed(shortpressed4, longpressed4))
+    println(StickyKeysTyping.isLongPressed(shortpressed5, longpressed5))
 
-  //else if input == "0" then
-  //else if input == "0" then
   //else if input == "0" then
   //else if input == "0" then
 }
@@ -84,6 +102,8 @@ def run_all(): Unit = {
   run_base("13")
   println("### Week 14")
   run_base("14")
+  println("### Week 15")
+  run_base("15")
 }
 
 // main run
